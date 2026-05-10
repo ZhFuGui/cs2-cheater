@@ -21,7 +21,7 @@
 
 | 模块 | 功能 | 适用平台 |
 |:-----|:-----|:---------|
-| [cs2-xray](#cs2-xray) | 最轻量的热能透视              | VAC · 官匹 |
+| [cs2-xray](https://github.com/ZhFuGui/cs2-xray) | 最轻量的热能透视              | VAC · 官匹 |
 | cs2-radar             | 跨设备雷达系统        | 全平台 |
 | cs2-rage              | 自瞄 / ESP / 掩体判断 | VAC · 官匹 |
 
@@ -33,8 +33,6 @@
 <!--                         cs2-xray                             -->
 <!-- ============================================================ -->
 
-<a name="cs2-xray"></a>
-
 <div align="center">
 
 ### cs2-xray
@@ -45,7 +43,7 @@
 
 基于显存级渲染拦截实现的轻量穿墙效果,以热能渐变呈现敌我位置。资源占用低,可作为独立叠加层运行,也可与其他模块组合使用。
 
-[![Repo](https://img.shields.io/badge/_查看仓库_cs2--xray_-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+[![Repo](https://img.shields.io/badge/_查看仓库_cs2--xray_-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ZhFuGui/cs2-xray)
 
 <br />
 

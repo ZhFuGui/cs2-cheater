@@ -21,7 +21,7 @@ English | [中文](README.zh-CN.md)
 
 | Module | Function | Supported Platforms |
 |:-------|:---------|:--------------------|
-| [cs2-xray](#cs2-xray) | Minimalist thermal x-ray       | VAC · Official MM |
+| [cs2-xray](https://github.com/ZhFuGui/cs2-xray) | Minimalist thermal x-ray       | VAC · Official MM |
 | cs2-radar             | Cross-device radar system      | All platforms |
 | cs2-rage              | Aimbot / ESP / Visibility check | VAC · Official MM |
 
@@ -33,8 +33,6 @@ English | [中文](README.zh-CN.md)
 <!--                         cs2-xray                             -->
 <!-- ============================================================ -->
 
-<a name="cs2-xray"></a>
-
 <div align="center">
 
 ### cs2-xray
@@ -45,7 +43,7 @@ English | [中文](README.zh-CN.md)
 
 A lightweight wallhack built on VRAM-level render interception, surfacing enemy positions through a thermal gradient. Low overhead — runs as a standalone overlay or pairs with other modules.
 
-[![Repo](https://img.shields.io/badge/_View_Repo_cs2--xray_-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+[![Repo](https://img.shields.io/badge/_View_Repo_cs2--xray_-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ZhFuGui/cs2-xray)
 
 <br />
 
