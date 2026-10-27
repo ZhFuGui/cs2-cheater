@@ -50,12 +50,14 @@
 
 ### 效果展示
 
-<a href="assets/videos/traceline/cover-detection.mp4">
-  <img src="assets/images/traceline/cover-detection.png" alt="cs2-external-traceline 掩体检测效果展示，点击观看 1080p 视频" width="85%" />
-</a>
+</div>
+
+https://github.com/user-attachments/assets/7d581ce0-e13f-4d4f-b1a5-7eff57cd57d4
+
+<div align="center">
 
 <br />
-<sub>图一：掩体检测 · 点击封面观看 1080p / 30 FPS 视频</sub>
+<sub>图一：掩体检测 · 1080p / 30 FPS</sub>
 
 <br /><br />
 
