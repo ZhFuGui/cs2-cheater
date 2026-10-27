@@ -2,7 +2,7 @@
 
 # CS2 Cheater
 
-*read and write*
+*External CS2 tools and libraries*
 
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows-0078D4.svg?style=flat-square&logo=windows&logoColor=white)](#)
@@ -13,64 +13,52 @@ English | [中文](README.zh-CN.md)
 
 ---
 
-## Modules
+## Projects
 
-> **Status:** Early development. Each module ships as a standalone GitHub repository — this document is the ecosystem portal.
+This repository brings together project overviews, previews, and source links. **cs2-external-traceline** is the first project added to the collection. Each project maintains its source and build configuration in its own repository.
 
-<div align="center">
-
-| Module | Function | Supported Platforms |
-|:-------|:---------|:--------------------|
-| [cs2-xray](https://github.com/ZhFuGui/cs2-xray) | Minimalist thermal x-ray       | VAC · Official MM |
-| cs2-radar             | Cross-device radar system      | All platforms |
-| cs2-rage              | Aimbot / ESP / Visibility check | VAC · Official MM |
-
-</div>
+| Project | Features | Platform |
+|:--------|:---------|:---------|
+| [cs2-external-traceline](https://github.com/ZhFuGui/cs2-external-traceline) | External ray queries / Cover checks / Penetration damage prediction | Windows x64 |
 
 ---
 
-<!-- ============================================================ -->
-<!--                         cs2-xray                             -->
-<!-- ============================================================ -->
-
 <div align="center">
 
-### cs2-xray
+## cs2-external-traceline
 
-**Pure C++ Thermal X-Ray Module**
+**External Ray Queries · Cover Checks · Penetration Damage Prediction**
 
-[![C++](https://img.shields.io/badge/C++-17%2F20-00599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
-
-A lightweight wallhack built on VRAM-level render interception, surfacing enemy positions through a thermal gradient. Low overhead — runs as a standalone overlay or pairs with other modules.
-
-[![Repo](https://img.shields.io/badge/_View_Repo_cs2--xray_-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ZhFuGui/cs2-xray)
-
-<br />
-
-<img src="assets/images/xray/hero.png" alt="cs2-xray Overview" width="85%" />
-
-<br /><br />
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/images/xray/01.png" alt="ESP Render" />
-      <br /><b>ESP Render</b>
-    </td>
-    <td align="center">
-      <img src="assets/images/xray/02.png" alt="Thermal Effect" />
-      <br /><b>Thermal Effect</b>
-    </td>
-    <td align="center">
-      <img src="assets/images/xray/03.png" alt="In-Game Footage" />
-      <br /><b>In-Game Footage</b>
-    </td>
-  </tr>
-</table>
+[![C++](https://img.shields.io/badge/C++-20-00599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)](https://github.com/ZhFuGui/cs2-external-traceline)
+[![Library](https://img.shields.io/badge/library-DLL-555555.svg?style=flat-square)](https://github.com/ZhFuGui/cs2-external-traceline)
 
 </div>
 
-<br />
+Queries A → B segments outside the game process using map collision geometry and a BVH acceleration structure. Supplies occlusion, collision hits, traversal thickness, and damage predictions to other tools.
+
+| Capability | Description |
+|:-----------|:------------|
+| Cover checks | Detect scene occlusion between two points; return the closest hit or all hits |
+| Traversal thickness | Return entry/exit intervals and path thickness where the geometry supports reliable volume queries |
+| Damage prediction | Use weapon and material parameters for range falloff and penetration loss, with target hit-group and armor calculations |
+| Scene caching | Import physics text or triangle data; build, save, and load collision scene caches |
+| Integration | C API and C++ wrapper, with concurrent read-only queries on the same scene |
+
+The library handles queries and calculations. The caller supplies scenes, weapon/material parameters, and target state; the consuming application draws skeletons, names, and other visuals. Damage predictions use the supplied static scene and parameters; full live-fire validation is still pending.
+
+<div align="center">
+
+### Preview
+
+<img src="assets/images/traceline/demo.gif" alt="cs2-external-traceline preview: animated player skeletons and names" width="85%" />
+
+<br /><br />
+
+[![Repo](https://img.shields.io/badge/_View_Repo_cs2--external--traceline_-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ZhFuGui/cs2-external-traceline)
+
+</div>
+
+**Build environment:** Visual Studio 2022 · MSVC v143 · Windows SDK · C++20. Builds an x64 DLL; see the [public headers](https://github.com/ZhFuGui/cs2-external-traceline/tree/main/include/cs2-external-traceline) and [Visual Studio solution](https://github.com/ZhFuGui/cs2-external-traceline/blob/main/cs2-external-traceline.sln) in the project repository.
 
 ---
 
