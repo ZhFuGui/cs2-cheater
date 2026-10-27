@@ -50,10 +50,12 @@ The library handles queries and calculations. The caller supplies scenes, weapon
 
 ### Preview
 
-<img src="assets/images/traceline/cover-detection.gif" alt="cs2-external-traceline cover detection demo" width="85%" />
+<a href="assets/videos/traceline/cover-detection.mp4">
+  <img src="assets/images/traceline/cover-detection.png" alt="cs2-external-traceline cover detection demo; click to watch the 1080p video" width="85%" />
+</a>
 
 <br />
-<sub>Figure 1: Cover detection</sub>
+<sub>Figure 1: Cover detection · Click the cover to watch in 1080p / 30 FPS</sub>
 
 <br /><br />
 
