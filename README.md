@@ -50,7 +50,10 @@ The library handles queries and calculations. The caller supplies scenes, weapon
 
 ### Preview
 
-<img src="assets/images/traceline/demo.gif" alt="cs2-external-traceline preview: animated player skeletons and names" width="85%" />
+<img src="assets/images/traceline/cover-detection.gif" alt="cs2-external-traceline cover detection demo" width="85%" />
+
+<br />
+<sub>Figure 1: Cover detection</sub>
 
 <br /><br />
 

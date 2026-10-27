@@ -50,7 +50,10 @@
 
 ### 效果展示
 
-<img src="assets/images/traceline/demo.gif" alt="cs2-external-traceline 效果展示：人物骨骼与名称的动态可视化" width="85%" />
+<img src="assets/images/traceline/cover-detection.gif" alt="cs2-external-traceline 掩体检测效果展示" width="85%" />
+
+<br />
+<sub>图一：掩体检测</sub>
 
 <br /><br />
 
